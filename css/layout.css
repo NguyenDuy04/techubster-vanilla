@@ -1,0 +1,18 @@
+/* ==========================================
+   LAYOUT.CSS
+   Nhiệm vụ: Định hình khung sườn (Header, Main, Footer, Sidebar)
+   ========================================== */
+
+/* 1. Container - Căn giữa nội dung và giới hạn chiều rộng */
+#wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 2. Header - Luôn nằm trên cùng */
+#navtop {
+    display: none;
+    width: 100%;
+}
+

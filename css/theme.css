@@ -1,0 +1,22 @@
+/* Light theme (mặc định) */
+:root[data-theme = "light"] {
+    --bg-color: #fff; /* Bacground Color */
+    --primary-color-400: #5EEAD4; /* Hover state */
+    --primary-color-500: #2DD4BF; /* primary color, Default, Base */
+    --primary-color-600: #14B8A6; /* Active, Pressed state */
+    --surface: #f8fafc;
+    --border: #e2e8f0; 
+    --text-main: #0f172a;
+    --text-sub: #475569;
+}
+
+:root[data-theme = "dark"] {
+    --bg-color: #020617; /* Bacground Color */
+    --primary-color-400: #5EEAD4; /* Hover state */
+    --primary-color-500: #2DD4BF; /* primary color, Default, Base */
+    --primary-color-600: #14B8A6; /* Active, Pressed state */
+    --surface: #0f172a;
+    --border: #1e293b; 
+    --text-main: #f8fafc;
+    --text-sub: #cbd5e1;
+}

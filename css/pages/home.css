@@ -1,0 +1,43 @@
+/* Nav Top */
+#navtop {
+    height: 30px;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-inline: 0.8rem;
+}
+
+@media (min-width: 992px) {
+    #navtop {
+        display: flex;
+    }
+}
+
+.navtop__list {
+    display: flex;
+    gap: 2rem;
+}
+
+.navtop__items {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+    cursor: pointer;
+}
+
+.navtop__items:hover {
+    /* color: ; */
+}
+
+.navtop__items i,
+.navtop__items span {
+    font-size: 1.6rem;
+}
+
+.navtop__items-other a {
+    margin: 0 0.2rem;
+    font-size: 1.7rem;
+}
+
+.navtop__items-socials {
+    cursor: default;
+}
