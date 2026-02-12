@@ -1,17 +1,33 @@
-/* Light theme (mặc định) */
+:root {
+    --white-color: #fff;
+    --dark-color: #000;
+}
+
+/* Light theme (Default) */
 :root[data-theme = "light"] {
-    --bg-color: #fff; /* Bacground Color */
+    --bg-body: #F9FAFB; /* Bacground Color */
+    --bg-surface: #ffffff; /* Card */
+    --bg-hover: #F3F4F6;
     --primary-color-400: #5EEAD4; /* Hover state */
     --primary-color-500: #2DD4BF; /* primary color, Default, Base */
     --primary-color-600: #14B8A6; /* Active, Pressed state */
-    --surface: #f8fafc;
+    --surface: #f8fafc; /* Card or #ffffff */
     --border: #e2e8f0; 
-    --text-main: #0f172a;
-    --text-sub: #475569;
+    --text-main: #0f172a; /* Primary text */
+    --text-sub: #475569; /* Sub text */  
+    --text-disable: #94A3B8;
+    --text-hover: rgba(15, 23, 42, 0.8);
+    --success-color: #22c55e;
+    --wraning-color: #facc15;
+    --error-color: #ef4444;
+    --info-color: #38BDF8;
 }
 
+/* Dark theme */
 :root[data-theme = "dark"] {
-    --bg-color: #020617; /* Bacground Color */
+    --bg-body: #020617; /* Bacground Color */
+    --bg-surface: #0F172A;   /* card */
+    --bg-hover: #1E293B;
     --primary-color-400: #5EEAD4; /* Hover state */
     --primary-color-500: #2DD4BF; /* primary color, Default, Base */
     --primary-color-600: #14B8A6; /* Active, Pressed state */
@@ -19,4 +35,10 @@
     --border: #1e293b; 
     --text-main: #f8fafc;
     --text-sub: #cbd5e1;
+    --text-disable: #64748B;
+    --text-hover: rgba(248, 250, 252, 0.8);
+    --success-color: #22c55e;
+    --wraning-color: #facc15;
+    --error-color: #ef4444;
+    --info-color: #38BDF8;
 }

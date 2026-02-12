@@ -4,6 +4,7 @@
    ========================================== */
 
 /* 1. Container - Căn giữa nội dung và giới hạn chiều rộng */
+/* Wrapper */
 #wrapper {
     width: 100%;
     max-width: 1200px;
@@ -11,8 +12,10 @@
 }
 
 /* 2. Header - Luôn nằm trên cùng */
-#navtop {
+nav#navtop {
     display: none;
-    width: 100%;
 }
 
+header#header {
+    
+}

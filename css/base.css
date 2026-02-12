@@ -14,17 +14,12 @@ html {
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
     cursor: default;
+    background-color: var(--bg-body);
+    color: var(--text-main);
 }
 
 *:not(dialog) {
     margin: 0;
-}
-
-/* Wrapper */
-#wrapper {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
