@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function addtopnav() {
     const navHTML = `
-    <ul class="navtop__list">
+    <ul class="navtop__list flex">
         <li class="navtop__items">
             <a href="/pages/storelocation.html">
                 <i class="fa-solid fa-map-location-dot"></i>
@@ -30,7 +30,7 @@ function addtopnav() {
             </div>
         </li>
     </ul>
-    <ul class="navtop__list">
+    <ul class="navtop__list flex">
         <li class="navtop__items">
             <a href="/pages/trackyourorder.html">
                 <i class="fa-solid fa-truck-fast"></i>

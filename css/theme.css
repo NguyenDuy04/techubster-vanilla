@@ -26,7 +26,7 @@
 /* Dark theme */
 :root[data-theme = "dark"] {
     --bg-body: #020617; /* Bacground Color */
-    --bg-surface: #0F172A;   /* card */
+    --bg-surface: #0F172A;   /* Card */
     --bg-hover: #1E293B;
     --primary-color-400: #5EEAD4; /* Hover state */
     --primary-color-500: #2DD4BF; /* primary color, Default, Base */

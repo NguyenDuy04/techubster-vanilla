@@ -1,21 +1,140 @@
-/* ==========================================
-   LAYOUT.CSS
-   Nhiệm vụ: Định hình khung sườn (Header, Main, Footer, Sidebar)
-   ========================================== */
+/* ==========================================                         */
+/*   LAYOUT.CSS                                                       */            
+/*   Nhiệm vụ: Định hình khung sườn (Header, Main, Footer, Sidebar)   */
+/*   ==========================================                       */
 
-/* 1. Container - Căn giữa nội dung và giới hạn chiều rộng */
-/* Wrapper */
-#wrapper {
+/* ============================= */
+/*         CONTAINER             */
+/* ============================= */
+.container {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-inline: auto;
+    padding-inline: 1rem;
 }
 
-/* 2. Header - Luôn nằm trên cùng */
+/* Tablet */    
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* Laptop Small */
+
+@media (min-width: 992px) {
+    .container {
+        padding-inline: 1rem;
+        max-width: 100%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* ============================= */
+/*           LAYOUT              */
+/* ============================= */
+
+
+
+/* ============================= */
+/*            HEADER             */
+/* ============================= */
+
 nav#navtop {
     display: none;
+    position: sticky;
+    top: 0;
 }
 
 header#header {
-    
+    position: relative;
+    z-index: 9999;
+    display: flex;
+}
+
+/* ============================= */
+/*            GRID               */
+/* ============================= */
+
+.grid {
+    display: grid;
+    gap: 16px;
+}
+
+/* Responsive grid utility */
+.grid-2 {
+    grid-template-columns: 1fr;
+}
+
+.grid-3 {
+    grid-template-columns: 1fr;
+}
+
+.grid-4 {
+    grid-template-columns: 1fr;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ============================= */
+/*            FLEX               */
+/* ============================= */
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ============================= */
+/*            SPACING            */
+/* ============================= */
+
+.section {
+    padding-block: 40px;
+}
+
+@media (min-width: 768px) {
+    .section {
+        padding-block: 64px;
+    }
 }
