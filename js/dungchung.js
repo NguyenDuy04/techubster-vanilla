@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     addtopnav();
+    addheader();
 })
 
 function addtopnav() {
@@ -58,4 +59,50 @@ function addtopnav() {
     </ul>`;
 
     document.getElementById("navtop").innerHTML = navHTML;
+}
+
+function addheader() {
+    const headerHTML = `
+    <div class="header__logo">
+        <a href="/index.html" class="header__logo-link flex-center">
+            <img src="/assets/image/logo/logo-removebg-preview.png" alt="Home">
+            <span>Techubster</span>
+        </a>
+    </div>
+    <div class="header__category">
+        <div class="header__category-text flex-center">
+            <i class="fa-solid fa-bars"></i>
+            <span>
+                Categories
+            </span>
+        </div>
+    </div>
+    <div class="header__search flex-between">
+        <div class="header__search-wrapper">
+            <input class="flex" type="text" placeholder="Search For Products..." name="Search"
+                autocomplete="off">
+            <button class="search__btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+    <div class="header__tool">
+        <div class="header__notify">
+            <button class="header__tool-icon header__notify-icon">
+                <i class="fa-solid fa-bell"></i>
+            </button>
+        </div>
+        <div class="header__cart flex-center">
+            <button class="header__tool-icon header__cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        </div>
+        <div class="header__user">
+            <button class="header__tool-icon header__user-icon">
+                <i class="fa-solid fa-user"></i>
+            </button>
+        </div>
+    </div>`;
+
+    document.getElementById("header").innerHTML = headerHTML;
 }
